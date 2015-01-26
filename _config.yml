@@ -1,0 +1,12 @@
+# Site settings
+title: Apocalypse Idaho
+email: richard.lundeen@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to the world of my mind
+baseurl: "/apocalypseidaho/" # the subpath of your site, e.g. /blog/
+url: "http://apocalypseidaho.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
