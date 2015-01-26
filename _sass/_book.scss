@@ -20,11 +20,13 @@ h1 {
 .apolcalyptic-text {
   font-family: 'Special Elite', Arial, serif;
   font-size: 40px;
+  font-weight: 400;
 }
 
 .space-text {
   font-family: 'Bangers', cursive;
   font-size: 40px;
+  font-weight: 400;
 }
 
 .coming-soon {
@@ -114,12 +116,12 @@ img:last-of-type {
 }
 
 #apocalypseIdaho:before {
-  background-image: url("https://s3.amazonaws.com/ooomf-com-files/3jPYgeVCTWCMqjtb7Dqi_IMG_8251.jpg");
+  background-image: url("../images/forest.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
 #violaViolence {
-  background-image: url("http://24.media.tumblr.com/4b27e477e054f94a54513f7d50f28e09/tumblr_n397cyiw2s1slhhf0o1_1280.jpg");
+  background-image: url("../images/space.jpg");
   background-attachment: fixed;
 }

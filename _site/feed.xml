@@ -4,10 +4,10 @@
     <title>Apocalypse Idaho</title>
     <description>Welcome to the world of my mind
 </description>
-    <link>http://apocalypseidaho.com/apocalypseidaho//</link>
-    <atom:link href="http://apocalypseidaho.com/apocalypseidaho//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jan 2015 21:24:16 -0800</pubDate>
-    <lastBuildDate>Sun, 25 Jan 2015 21:24:16 -0800</lastBuildDate>
+    <link>http://apocalypseidaho.com/</link>
+    <atom:link href="http://apocalypseidaho.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 25 Jan 2015 22:46:44 -0800</pubDate>
+    <lastBuildDate>Sun, 25 Jan 2015 22:46:44 -0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -18,8 +18,8 @@
 
 </description>
         <pubDate>Sat, 24 Jan 2015 01:19:21 -0800</pubDate>
-        <link>http://apocalypseidaho.com/apocalypseidaho//jekyll/update/2015/01/24/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://apocalypseidaho.com/apocalypseidaho//jekyll/update/2015/01/24/welcome-to-jekyll.html</guid>
+        <link>http://apocalypseidaho.com/jekyll/update/2015/01/24/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://apocalypseidaho.com/jekyll/update/2015/01/24/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
