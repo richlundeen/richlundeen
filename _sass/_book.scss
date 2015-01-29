@@ -13,31 +13,25 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-   font-size: 100%
-}
-
 .apolcalyptic-text {
   font-family: 'Special Elite', Arial, serif;
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 400;
 }
 
 .space-text {
   font-family: 'Bangers', cursive;
-  font-size: 40px;
+  font-size: 46px;
   font-weight: 400;
 }
 
-.coming-soon {
-  background-color: yellow;
-  font-style: italic;
-  padding: 5px 10px 5px 5px;
+img {
+  max-width: 100%;
 }
 
 p {
-  font-size: 140%;
-  line-height: 150%;
+  font-size: 18px;
+  line-height: 1.5;
   color: #333;
 }
 
@@ -49,32 +43,31 @@ p {
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
   transform-style: inherit;
-}
 
-img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+  }
 
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
+  h1 {
+    margin-bottom: 20px;
+  }
 
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
+  .img-container {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+  }
+
+  p {
+    text-align: justify;
+    margin-bottom: 18px;
+  }
 }
 
 .title {
@@ -83,6 +76,7 @@ img:last-of-type {
   border-radius: 2px;
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  overflow: hidden;
 }
 
 .slide:nth-child(2n) .title {
@@ -126,6 +120,10 @@ img:last-of-type {
 }
 
 #violaViolence {
-  background-image: url("../images/space.jpg");
+  background-image: url("../images/space_1000x1000_80q.jpg");
   background-attachment: fixed;
+
+  @include desktop {
+    background-image: url("../images/space_2000x2000_80q.jpg");
+  }
 }
