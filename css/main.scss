@@ -42,9 +42,26 @@ $on-laptop:        800px;
     }
 }
 
+@mixin tablet() {
+    @media screen and (min-width: 600px) {
+        @content;
+    }
+}
 
+@mixin desktop() {
+    @media screen and (min-width: 800px) {
+        @content;
+    }
+}
+
+@mixin large-desktop() {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "bootstrap",
         "book"
 ;

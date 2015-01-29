@@ -116,9 +116,13 @@ img:last-of-type {
 }
 
 #apocalypseIdaho:before {
-  background-image: url("../images/forest.jpg");
+  background-image: url("../images/forest_1000x667_80q.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
+
+  @include desktop {
+    background-image: url("../images/forest_2000x1333_80q.jpg");
+  }
 }
 
 #violaViolence {
