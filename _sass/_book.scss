@@ -139,20 +139,24 @@ p {
     font-size: 20px;
     margin: 0;
     text-transform: uppercase;
+
+    a {
+      margin-left: 0;
+    }
   }
 
   .social-media {
     float: right;
+  }
 
-    a {
-      color: #333;
-      margin-left: 30px;
+  a {
+    color: #333;
+    margin-left: 30px;
 
-      &:hover,
-      &:focus {
-        color: #0078a0;
-        text-decoration: none;
-      }
+    &:hover,
+    &:focus {
+      color: #0078a0;
+      text-decoration: none;
     }
   }
 }
