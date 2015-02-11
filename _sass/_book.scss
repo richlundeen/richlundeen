@@ -1,28 +1,3 @@
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body { 
-  margin:0;
-  padding:0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-a {
-  color: #333;
-
-  &:hover,
-  &:focus {
-    color: #0078a0;
-    text-decoration: none;
-  }
-}
-
 .apolcalyptic-text {
   font-family: 'Special Elite', Arial, serif;
   font-size: 42px;
@@ -35,17 +10,7 @@ a {
   font-weight: 400;
 }
 
-img {
-  max-width: 100%;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #333;
-}
-
-.slide {
+.book {
   position: relative;
   padding: 25vh 10%;
   min-height: 35vh;
@@ -61,25 +26,25 @@ p {
     right:0;
   }
 
-  h1 {
-    margin-bottom: 20px;
-  }
-
   .img-container {
     float: left;
     margin-right: 30px;
     margin-bottom: 30px;
     width: 30%;
   }
+}
 
-  p {
-    text-align: justify;
-    margin-bottom: 18px;
-  }
+.book-details--title {
+  margin-bottom: 20px;
+}
+
+.book-details--blurb p {
+  text-align: justify;
+  margin-bottom: 18px;
 }
 
 .paperback {
-  color: #333;
+  color: $grey-color-dark;
   font-size: 16px;
 
   a {
@@ -97,7 +62,7 @@ p {
     float: left;
 
     a {
-      background-color: #eee;
+      background-color: $grey-color-light;
       display: block;
       padding: 10px 20px;
       border: 1px solid #000;
@@ -112,7 +77,7 @@ p {
   }
 }
 
-.title {
+.book-details {
   width: 65%;
   padding: 5%;
   border-radius: 2px;
@@ -121,64 +86,19 @@ p {
   overflow: hidden;
 }
 
-.slide:nth-child(2n) .title {
+.book:nth-child(2n) .book-details {
   margin-left: 0;
   margin-right: auto;
 }
 
-.slide:nth-child(2n+1) .title {
+.book:nth-child(2n+1) .book-details {
   margin-left: auto;
   margin-right: 0;
 }
 
-.slide,
-.slide:before {
+.book,
+.book:before {
   background: 50% 50% / cover;
-}
-
-.goodreads-link {
-  font-family: helvetica;
-  font-size: 18px;
-  position: relative;
-  top: -1px;
-}
-
-.header {
-  background-color: #fff;
-  border-bottom: 5px solid rgba(54,54,54,.2);
-  padding: 20px 20px 17px 20px;
-  overflow: hidden;
-
-  h1 {
-    float: left;
-    font-size: 20px;
-    margin: 0;
-    text-transform: uppercase;
-
-    a {
-      margin-left: 0;
-    }
-  }
-
-  .social-media {
-    float: right;
-  }
-
-  a {
-    margin-left: 30px;
-  }
-
-  .separator {
-    padding-left: 30px;
-    position: relative;
-    top: -6px;
-    color: #ccc;
-
-    span {
-      position: absolute;
-      font-size: 24px;
-    }
-  }
 }
 
 #apocalypseIdaho:before {

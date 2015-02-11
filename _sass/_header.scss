@@ -1,0 +1,44 @@
+.site-header {
+  background-color: #fff;
+  border-bottom: 5px solid rgba(54,54,54,.2);
+  padding: 20px 20px 17px 20px;
+  overflow: hidden;
+
+  a {
+    margin-left: 30px;
+  }
+}
+
+.site-header--title {
+  float: left;
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+
+  a {
+    margin-left: 0;
+  }
+}
+
+.site-header--separator {
+  padding-left: 30px;
+  position: relative;
+  top: -6px;
+  color: #ccc;
+
+  span {
+    position: absolute;
+    font-size: 24px;
+  }
+}
+
+.site-header--links {
+  float: right;
+}
+
+.goodreads-link {
+  font-family: helvetica;
+  font-size: 18px;
+  position: relative;
+  top: -1px;
+}
