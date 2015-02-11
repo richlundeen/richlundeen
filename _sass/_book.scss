@@ -1,36 +1,52 @@
 .apolcalyptic-text {
   font-family: 'Special Elite', Arial, serif;
-  font-size: 42px;
+  font-size: 30px;
   font-weight: 400;
+
+  @include tablet() {
+    font-size: 42px;
+  }
 }
 
 .space-text {
   font-family: 'Bangers', cursive;
-  font-size: 46px;
+  font-size: 38px;
   font-weight: 400;
+
+  @include tablet() {
+    font-size: 46px;
+  }
 }
 
 .book {
-  position: relative;
-  padding: 25vh 10%;
-  min-height: 35vh;
-  width: 100vw;
-  transform-style: inherit;
+  padding: 30px;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left:0;
-    right:0;
+  @include tablet() {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 35vh;
+    width: 100vw;
+    transform-style: inherit;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left:0;
+      right:0;
+    }
   }
 
   .img-container {
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 30%;
+    width: 50%;
+    margin: 30px 0;
+
+    @include tablet {
+      float: left;
+      margin: 0 30px 30px 0;
+      width: 30%;
+    }
   }
 }
 
@@ -41,6 +57,10 @@
 .book-details--blurb p {
   text-align: justify;
   margin-bottom: 18px;
+}
+
+.preorder-text {
+  margin-bottom: 0;
 }
 
 .paperback {
@@ -62,11 +82,15 @@
     float: left;
 
     a {
-      background-color: $grey-color-light;
+      background-color: $grey-color-lightest;
       display: block;
       padding: 10px 20px;
       border: 1px solid #000;
       margin: 10px 10px 0 0;
+
+      @include tablet {
+        background-color: $grey-color-light;
+      }
 
       &:hover,
       &:focus {
@@ -78,42 +102,54 @@
 }
 
 .book-details {
-  width: 65%;
-  padding: 5%;
-  border-radius: 2px;
-  background: rgba(255,255,255, .75);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-  overflow: hidden;
-}
-
-.book:nth-child(2n) .book-details {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.book:nth-child(2n+1) .book-details {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.book,
-.book:before {
-  background: 50% 50% / cover;
-}
-
-#apocalypseIdaho:before {
-  background-image: url("../images/forest_1000x667_80q.jpg");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-
-  @include desktop {
-    background-image: url("../images/forest_2000x1333_80q.jpg");
+  @include tablet {
+    width: 65%;
+    padding: 5%;
+    border-radius: 2px;
+    background: rgba(255,255,255, .75);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    overflow: hidden;
   }
 }
 
+@include tablet {
+  .book:nth-child(2n) .book-details {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .book:nth-child(2n+1) .book-details {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .book,
+  .book:before {
+    background: 50% 50% / cover;
+  }
+}
+
+@include tablet {
+  #apocalypseIdaho:before {
+    background-image: url("../images/forest_1000x667_80q.jpg");
+    transform: translateZ(-1px) scale(2);
+    z-index:-1;
+
+    @include desktop {
+      background-image: url("../images/forest_2000x1333_80q.jpg");
+    }
+  }
+}
+
+
 #violaViolence {
-  background-image: url("../images/space_1000x1000_80q.jpg");
-  background-attachment: fixed;
+  background-color: #eee;
+
+  @include tablet {
+    background-color: transparent;
+    background-image: url("../images/space_1000x1000_80q.jpg");
+    background-attachment: fixed;
+  }
 
   @include desktop {
     background-image: url("../images/space_2000x2000_80q.jpg");

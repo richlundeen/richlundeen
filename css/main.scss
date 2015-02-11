@@ -16,6 +16,7 @@ $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
+$grey-color-lightest: lighten($grey-color, 55%); /* TODO figure this out */
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
