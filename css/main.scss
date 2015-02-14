@@ -27,6 +27,12 @@ $grey-color-dark:  darken($grey-color, 25%);
     }
 }
 
+@mixin mobile-only() {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
 @mixin large-mobile() {
     @media screen and (min-width: 500px) {
         @content;

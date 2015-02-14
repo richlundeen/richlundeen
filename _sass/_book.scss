@@ -23,8 +23,8 @@
 
   @include tablet() {
     position: relative;
-    padding: 25vh 10%;
-    min-height: 35vh;
+    padding: 10vh 10%;
+    min-height: 55vh;
     width: 100vw;
     transform-style: inherit;
 
@@ -103,12 +103,16 @@
 
 .book-details {
   @include tablet {
-    width: 65%;
+    width: 100%;
     padding: 5%;
     border-radius: 2px;
     background: rgba(255,255,255, .75);
     box-shadow: 0 0 8px rgba(0, 0, 0, .7);
     overflow: hidden;
+  }
+
+  @include desktop {
+    width: 65%;
   }
 }
 
@@ -132,7 +136,6 @@
 @include tablet {
   #apocalypseIdaho:before {
     background-image: url("../images/forest_1000x667_80q.jpg");
-    transform: translateZ(-1px) scale(2);
     z-index:-1;
 
     @include desktop {
@@ -143,8 +146,6 @@
 
 
 #violaViolence {
-  background-color: #eee;
-
   @include tablet {
     background-color: transparent;
     background-image: url("../images/space_1000x1000_80q.jpg");
@@ -153,5 +154,12 @@
 
   @include desktop {
     background-image: url("../images/space_2000x2000_80q.jpg");
+  }
+
+  .book-details {
+    @include mobile-only {
+      border-top: 5px solid #eee;
+      padding-top: 30px;
+    }
   }
 }
