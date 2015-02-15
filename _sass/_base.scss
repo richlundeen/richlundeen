@@ -22,11 +22,8 @@ p {
 }
 
 a {
-  color: #333;
-
   &:hover,
   &:focus {
-    color: #A61212;
     text-decoration: none;
   }
 }
