@@ -1,0 +1,14 @@
+footer {
+    background-color: #333;
+    padding: 15px 20px;
+    text-align: right;
+
+    a {
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
